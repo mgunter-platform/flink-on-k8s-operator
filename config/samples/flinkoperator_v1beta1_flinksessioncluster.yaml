@@ -18,7 +18,7 @@ metadata:
   name: flinksessioncluster-sample
 spec:
   image:
-    name: flink:1.8.2
+    name: flink:1.12
     pullPolicy: Always
   jobManager:
     accessScope: Cluster
@@ -54,3 +54,4 @@ spec:
       value: bar
   flinkProperties:
     taskmanager.numberOfTaskSlots: "1"
+    taskmanager.memory.flink.size: "500MB"
