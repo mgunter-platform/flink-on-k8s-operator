@@ -54,4 +54,4 @@ spec:
       value: bar
   flinkProperties:
     taskmanager.numberOfTaskSlots: "1"
-    taskmanager.memory.flink.size: "500MB"
+    taskmanager.memory.flink.size: "300MB"
