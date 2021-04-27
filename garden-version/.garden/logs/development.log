@@ -1,0 +1,301 @@
+
+[2021-04-26T20:41:06.181Z] Getting status...
+
+[2021-04-26T20:41:30.941Z] Getting status... → Done
+
+[2021-04-26T20:41:31.012Z] Failed resolving one or more modules:
+
+flink-operator: Error validating Module 'flink-operator': key .chartPath must be a relative sub-path (may not contain '..' segments or be an absolute path)
+flink-session-cluster: Error validating Module 'flink-session-cluster': key .files[0] must be a relative sub-path (may not contain '..' segments or be an absolute path)
+
+Error Details:
+
+errors: {}
+
+
+[2021-04-26T20:41:31.015Z] 
+See error.log for detailed error message
+
+[2021-04-26T20:45:15.639Z] Getting status...
+
+[2021-04-26T20:45:18.198Z] Getting status... → Cached
+
+[2021-04-26T20:45:18.200Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-26T20:45:18.285Z] Service flink-session-cluster is disabled
+
+[2021-04-26T20:45:18.291Z] Syncing module sources (10 files)...
+
+[2021-04-26T20:45:18.313Z] Syncing module sources (10 files)... → Done (took 0 sec)
+
+[2021-04-26T20:45:18.318Z] Getting build status for v-37493087a1...
+
+[2021-04-26T20:45:18.321Z] Building version v-37493087a1...
+
+[2021-04-26T20:45:18.325Z] Building version v-37493087a1... → Done (took 0 sec)
+
+[2021-04-26T20:45:19.566Z] Deploying version v-37493087a1...
+
+[2021-04-26T20:45:25.212Z] Deploying version v-37493087a1...
+
+[2021-04-26T20:45:25.220Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context minikube --namespace flink-cluster-default install flink-operator /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator --namespace flink-cluster-default --timeout 300s --values /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml --atomic" failed with code 1:
+
+Error: release flink-operator failed, and has been uninstalled due to atomic being set: Deployment.apps "flink-operator-controller-manager" is invalid: spec.template.spec.containers[1].image: Required value
+
+Error: release flink-operator failed, and has been uninstalled due to atomic being set: Deployment.apps "flink-operator-controller-manager" is invalid: spec.template.spec.containers[1].image: Required value
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context minikube --namespace flink-cluster-default install
+  flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --namespace flink-cluster-default --timeout 300s --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+  --atomic
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context minikube --namespace flink-cluster-default install
+  flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --namespace flink-cluster-default --timeout 300s --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+  --atomic
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: release flink-operator failed, and has been uninstalled due to atomic
+  being set: Deployment.apps "flink-operator-controller-manager" is invalid:
+  spec.template.spec.containers[1].image: Required value
+all: >-
+  Error: release flink-operator failed, and has been uninstalled due to atomic
+  being set: Deployment.apps "flink-operator-controller-manager" is invalid:
+  spec.template.spec.containers[1].image: Required value
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-26T20:45:25.224Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-26T20:45:19.564Z
+    completedAt: 2021-04-26T20:45:25.212Z
+    batchId: 2ff3b20d-e2a1-4844-bd24-0121091c4277
+    version: v-37493087a1
+
+
+[2021-04-26T20:45:25.227Z] 
+See error.log for detailed error message
+
+[2021-04-26T20:54:50.884Z] Getting status...
+
+[2021-04-26T20:54:53.657Z] Getting status... → Cached
+
+[2021-04-26T20:54:53.659Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-26T20:54:53.753Z] Service flink-session-cluster is disabled
+
+[2021-04-26T20:54:53.761Z] Syncing module sources (10 files)...
+
+[2021-04-26T20:54:53.786Z] Syncing module sources (10 files)... → Done (took 0 sec)
+
+[2021-04-26T20:54:53.794Z] Getting build status for v-3e1d8905ec...
+
+[2021-04-26T20:54:53.797Z] Building version v-3e1d8905ec...
+
+[2021-04-26T20:54:53.802Z] Building version v-3e1d8905ec... → Done (took 0 sec)
+
+[2021-04-26T20:54:54.850Z] Deploying version v-3e1d8905ec...
+
+[2021-04-26T20:54:58.577Z] Deploying version v-3e1d8905ec...
+
+[2021-04-26T20:54:58.587Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context minikube --namespace flink-cluster-default install flink-operator /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator --namespace flink-cluster-default --timeout 300s --values /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml --atomic" failed with code 1:
+
+Error: release flink-operator failed, and has been uninstalled due to atomic being set: Deployment.apps "flink-operator-controller-manager" is invalid: spec.template.spec.containers[1].image: Required value
+
+Error: release flink-operator failed, and has been uninstalled due to atomic being set: Deployment.apps "flink-operator-controller-manager" is invalid: spec.template.spec.containers[1].image: Required value
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context minikube --namespace flink-cluster-default install
+  flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --namespace flink-cluster-default --timeout 300s --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+  --atomic
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context minikube --namespace flink-cluster-default install
+  flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --namespace flink-cluster-default --timeout 300s --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+  --atomic
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: release flink-operator failed, and has been uninstalled due to atomic
+  being set: Deployment.apps "flink-operator-controller-manager" is invalid:
+  spec.template.spec.containers[1].image: Required value
+all: >-
+  Error: release flink-operator failed, and has been uninstalled due to atomic
+  being set: Deployment.apps "flink-operator-controller-manager" is invalid:
+  spec.template.spec.containers[1].image: Required value
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-26T20:54:58.594Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-26T20:54:54.848Z
+    completedAt: 2021-04-26T20:54:58.578Z
+    batchId: 7385091b-4a31-47fe-bb20-6dc186c6a726
+    version: v-3e1d8905ec
+
+
+[2021-04-26T20:54:58.598Z] 
+See error.log for detailed error message
+
+[2021-04-26T20:56:24.467Z] Getting status...
+
+[2021-04-26T20:56:26.561Z] Getting status... → Cached
+
+[2021-04-26T20:56:26.564Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-26T20:56:26.646Z] Service flink-session-cluster is disabled
+
+[2021-04-26T20:56:26.653Z] Syncing module sources (10 files)...
+
+[2021-04-26T20:56:26.675Z] Syncing module sources (10 files)... → Done (took 0 sec)
+
+[2021-04-26T20:56:26.680Z] Getting build status for v-c20252047b...
+
+[2021-04-26T20:56:26.682Z] Building version v-c20252047b...
+
+[2021-04-26T20:56:26.686Z] Building version v-c20252047b... → Done (took 0 sec)
+
+[2021-04-26T20:56:27.463Z] Deploying version v-c20252047b...
+
+[2021-04-26T20:56:40.398Z] Waiting for resources to be ready...
+
+[2021-04-26T20:56:42.482Z] Resources ready
+
+[2021-04-26T20:56:42.485Z] Deploying version v-c20252047b... → Done (took 15 sec)
+
+[2021-04-26T20:56:42.512Z] Done! ✔️ 
+
+[2021-04-26T20:56:50.386Z] Getting status...
+
+[2021-04-26T20:56:52.583Z] Getting status... → Cached
+
+[2021-04-26T20:56:52.585Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-26T20:56:52.659Z] Syncing module sources (10 files)...
+
+[2021-04-26T20:56:52.662Z] Syncing module sources (1 file)...
+
+[2021-04-26T20:56:52.679Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-04-26T20:56:52.683Z] Getting build status for v-ee21b741b7...
+
+[2021-04-26T20:56:52.685Z] Building version v-ee21b741b7...
+
+[2021-04-26T20:56:52.688Z] Syncing module sources (10 files)... → Done (took 0 sec)
+
+[2021-04-26T20:56:52.690Z] Getting build status for v-c20252047b...
+
+[2021-04-26T20:56:52.692Z] Building version v-c20252047b...
+
+[2021-04-26T20:56:52.695Z] Building version v-c20252047b... → Done (took 0 sec)
+
+[2021-04-26T20:56:52.699Z] Building version v-ee21b741b7... → Done (took 0 sec)
+
+[2021-04-26T20:56:53.651Z] Deploying version v-c20252047b...
+
+[2021-04-26T20:56:53.653Z] Deploying version v-c20252047b... → Already deployed
+
+[2021-04-26T20:56:53.673Z] Deploying version v-ee21b741b7...
+
+[2021-04-26T20:56:57.578Z] Waiting for resources to be ready...
+
+[2021-04-26T20:56:59.591Z] Resources ready
+
+[2021-04-26T20:56:59.610Z] Deploying version v-ee21b741b7... → Done (took 5.9 sec)
+
+[2021-04-26T20:56:59.616Z] Done! ✔️ 
+
+[2021-04-27T13:21:53.301Z] Getting status...
+
+[2021-04-27T13:21:55.300Z] Unable to enable minikube ingress addon: 
+X Exiting due to MK_USAGE: Due to networking limitations of driver docker on darwin, ingress addon is not supported.
+Alternatively to use this addon you can use a vm-based driver:
+
+	'minikube start --vm=true'
+
+To track the update on this work in progress feature please check:
+https://github.com/kubernetes/minikube/issues/7332
+
+
+[2021-04-27T13:21:56.295Z] Getting status... → Done
+
+[2021-04-27T13:21:56.392Z] Syncing module sources (10 files)...
+
+[2021-04-27T13:21:56.396Z] Syncing module sources (1 file)...
+
+[2021-04-27T13:21:56.413Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-04-27T13:21:56.416Z] Getting build status for v-ee21b741b7...
+
+[2021-04-27T13:21:56.421Z] Building version v-ee21b741b7...
+
+[2021-04-27T13:21:56.426Z] Syncing module sources (10 files)... → Done (took 0 sec)
+
+[2021-04-27T13:21:56.429Z] Getting build status for v-c20252047b...
+
+[2021-04-27T13:21:56.433Z] Building version v-c20252047b...
+
+[2021-04-27T13:21:56.437Z] Building version v-c20252047b... → Done (took 0 sec)
+
+[2021-04-27T13:21:56.441Z] Building version v-ee21b741b7... → Done (took 0 sec)
+
+[2021-04-27T13:21:56.931Z] Deploying version v-c20252047b...
+
+[2021-04-27T13:22:26.740Z] Waiting for resources to be ready...
+
+[2021-04-27T13:22:28.883Z] Resources ready
+
+[2021-04-27T13:22:28.888Z] Deploying version v-c20252047b... → Done (took 32 sec)
+
+[2021-04-27T13:22:28.891Z] Deploying version v-ee21b741b7...
+
+[2021-04-27T13:22:33.103Z] Waiting for resources to be ready...
+
+[2021-04-27T13:22:35.124Z] Resources ready
+
+[2021-04-27T13:22:35.150Z] Deploying version v-ee21b741b7... → Done (took 6.3 sec)
+
+[2021-04-27T13:22:35.185Z] Done! ✔️ 

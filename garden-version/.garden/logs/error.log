@@ -1,0 +1,124 @@
+
+[2021-04-26T20:41:31.011Z] Failed resolving one or more modules:
+
+flink-operator: Error validating Module 'flink-operator': key .chartPath must be a relative sub-path (may not contain '..' segments or be an absolute path)
+flink-session-cluster: Error validating Module 'flink-session-cluster': key .files[0] must be a relative sub-path (may not contain '..' segments or be an absolute path)
+
+Error Details:
+
+errors: {}
+
+
+[2021-04-26T20:45:25.219Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context minikube --namespace flink-cluster-default install flink-operator /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator --namespace flink-cluster-default --timeout 300s --values /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml --atomic" failed with code 1:
+
+Error: release flink-operator failed, and has been uninstalled due to atomic being set: Deployment.apps "flink-operator-controller-manager" is invalid: spec.template.spec.containers[1].image: Required value
+
+Error: release flink-operator failed, and has been uninstalled due to atomic being set: Deployment.apps "flink-operator-controller-manager" is invalid: spec.template.spec.containers[1].image: Required value
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context minikube --namespace flink-cluster-default install
+  flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --namespace flink-cluster-default --timeout 300s --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+  --atomic
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context minikube --namespace flink-cluster-default install
+  flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --namespace flink-cluster-default --timeout 300s --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+  --atomic
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: release flink-operator failed, and has been uninstalled due to atomic
+  being set: Deployment.apps "flink-operator-controller-manager" is invalid:
+  spec.template.spec.containers[1].image: Required value
+all: >-
+  Error: release flink-operator failed, and has been uninstalled due to atomic
+  being set: Deployment.apps "flink-operator-controller-manager" is invalid:
+  spec.template.spec.containers[1].image: Required value
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-26T20:45:25.224Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-26T20:45:19.564Z
+    completedAt: 2021-04-26T20:45:25.212Z
+    batchId: 2ff3b20d-e2a1-4844-bd24-0121091c4277
+    version: v-37493087a1
+
+
+[2021-04-26T20:54:58.587Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context minikube --namespace flink-cluster-default install flink-operator /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator --namespace flink-cluster-default --timeout 300s --values /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml --atomic" failed with code 1:
+
+Error: release flink-operator failed, and has been uninstalled due to atomic being set: Deployment.apps "flink-operator-controller-manager" is invalid: spec.template.spec.containers[1].image: Required value
+
+Error: release flink-operator failed, and has been uninstalled due to atomic being set: Deployment.apps "flink-operator-controller-manager" is invalid: spec.template.spec.containers[1].image: Required value
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context minikube --namespace flink-cluster-default install
+  flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --namespace flink-cluster-default --timeout 300s --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+  --atomic
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context minikube --namespace flink-cluster-default install
+  flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --namespace flink-cluster-default --timeout 300s --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+  --atomic
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: release flink-operator failed, and has been uninstalled due to atomic
+  being set: Deployment.apps "flink-operator-controller-manager" is invalid:
+  spec.template.spec.containers[1].image: Required value
+all: >-
+  Error: release flink-operator failed, and has been uninstalled due to atomic
+  being set: Deployment.apps "flink-operator-controller-manager" is invalid:
+  spec.template.spec.containers[1].image: Required value
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-26T20:54:58.594Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-26T20:54:54.848Z
+    completedAt: 2021-04-26T20:54:58.578Z
+    batchId: 7385091b-4a31-47fe-bb20-6dc186c6a726
+    version: v-3e1d8905ec
+
